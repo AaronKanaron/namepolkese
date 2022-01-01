@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+
+		<!-- Styling -->
+		<link rel="stylesheet" href="vars.css">
+		<link rel="stylesheet" href="style.css">
+
+
+	</head>
+
+	<body class="dark">
+		<main id="main">
+			<nav>
+				<p id="player-count" class="player-count">1/16</p>
+				<ul id="player-list">
+					<li class="player leader">
+						<div class="pfp">
+							<img src="https://artur.red/faces/3.svg" alt="Profile Picture">
+						</div>
+						<div class="info">
+							<p>ape hole</p>
+
+						</div>
+					</li>
+				</ul>
+				<hr>
+			</nav>
+
+			<div class="main-room-section">
+				<div class="room-section-header">
+					<h1 id="lobby-short-id" class="lobby-short-id">9670 &nbsp; 369</h1>
+				</div>
+				<div>
+					<div class="container">
+						<div class="config" id="config-area">
+							<div class="setting-row">
+								<div class="setting">
+									<select id="mature" name="mature">
+										<option value="regular" selected="selected">Regular</option>
+										<option value="mature">Mature</option>
+										<option value="mature-only">Mature only</option>
+									</select>
+								</div>
+
+								<div class="setting-text">
+									<p>Question type</p>
+								</div>
+							</div>
+
+							<div class="setting-row">
+								<div class="setting">
+									<label class="switch">
+										<input type="checkbox">
+										<span class="slider"></span>
+									</label>
+								</div>
+
+								<div class="setting-text">
+									<p>Public</p>
+								</div>
+							</div>
+
+							<div class="setting-row">
+								<div class="setting">
+									<select id="question-count" name="question-count">
+										<option value="1">1</option>
+										<option value="2" selected="selected">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+
+								<div class="setting-text">
+									<p>Question Amount</p>
+								</div>
+							</div>
+
+							<hr>
+
+							<div class="instructions">
+								<h1>How to play</h1>
+								<p>
+									The aim of the game is to form sentences and answers to questions using words that the players in the game
+									have written before the game starts.
+								</p>
+								<p>
+									The game starts with everyone writing a short story - this is where all the words come from when playing the
+									game. All the words are shuffled together and you have to answer the following questions in the game with
+									the words. Voting takes place after everyone has answered their questions. Then you have to vote for the
+									card with the funniest sentence, the one with the most votes at the end of the game wins.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<button id="start-button" class="bottom" style="display: block;">Start game!</button>
+				</div>
+
+			</div>
+
+			<div class="chat-container" id="chat-container">
+				<div class="top">
+					<div id="close-chat" class="blob" style="background: rgb(243, 106, 94); cursor: pointer;"></div>
+					<div class="blob" style="background: rgb(249, 189, 80);"></div>
+					<div class="blob" style="background: rgb(90, 195, 85);"></div>
+
+					<p>&lt;- LOBBY CHAT -&gt;</p>
+				</div>
+
+				<div id="chat-output" class="chat-output"></div>
+				<form id="chat-form" action="">
+					<input class="width" type="text" id="chat-input" placeholder="Chat...">
+				</form>
+			</div>
+		</main>
+
+		<button class="open-chat" id="open-chat"></button>
+	</body>
+
+</html>

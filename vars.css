@@ -1,0 +1,42 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+	--border-radius: .5rem;
+	--border-radius-inner: .25rem;
+	--border: 1px solid rgba(255, 255, 255, 0.173);
+	--border-color: rgba(0, 0, 0, 0.5);
+
+	--main-bg: hsla(216, 43%, 15%, .95);
+	/*This bascially does so the main bg color gives the color of #243651 if you didnt know*/
+	--main-color: #111E31;
+	/*Actually the main background*/
+	--main-color-hover: hsl(216, 38%, 20%);
+	--main-color-active: hsl(216, 38%, 25%);
+
+	--text-color: rgb(255, 255, 255);
+
+	--vibrant-green: #57cb57;
+	/*This is the color of the green button*/
+	--vibrant-yellow: #dfc925;
+	/*This is the color of the yellow button */
+	--vibrant-red: #e05252;
+	/*This is the color of the red button*/
+
+	--main-bg-image: url(https://artur.red/images/backgrounds/1.svg);
+	--main-bg-image-color: blue;
+
+	--grass-visibility: none;
+}
+
+
+* {
+	font-family: 'Open Sans', sans-serif;
+
+	/* hide scrollbar */
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
